@@ -69,6 +69,7 @@ The **base** has its own spec (shell contract), bound to the shell-only composit
      mode: live
      states: [empty]
    ```
+
 5. **Build and review.** `npm run build`, then walk the live preview and every
    fixture state. The preview URL is the review artifact.
 6. **Track progress in `tasks.md`.** Not in your head, not in chat.
