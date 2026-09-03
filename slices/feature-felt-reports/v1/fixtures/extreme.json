@@ -1,0 +1,17 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [173.021, -42.409] },
+      "properties": { "mmi": 9, "count": 214, "count_mmi": { "9": 96, "8": 118 } }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [174.005, -41.744] },
+      "properties": { "mmi": 8, "count": 377, "count_mmi": { "8": 259, "7": 118 } }
+    }
+  ],
+  "count_mmi": { "9": 96, "8": 377, "7": 118 },
+  "count": 591
+}

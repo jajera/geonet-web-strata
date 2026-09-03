@@ -1,0 +1,119 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          174.0,
+          -41.0
+        ]
+      },
+      "properties": {
+        "publicID": "fx-mmi9",
+        "time": "2026-09-03T18:59:00.000Z",
+        "depth": 12,
+        "magnitude": 7.8,
+        "mmi": 9,
+        "locality": "Near Wellington",
+        "quality": "best"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          174.0,
+          -41.0
+        ]
+      },
+      "properties": {
+        "publicID": "fx-mmi8",
+        "time": "2026-09-03T18:58:00.000Z",
+        "depth": 12,
+        "magnitude": 7.1,
+        "mmi": 8,
+        "locality": "Fixture locality",
+        "quality": "best"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          174.0,
+          -41.0
+        ]
+      },
+      "properties": {
+        "publicID": "fx-mmi3",
+        "time": "2026-09-03T18:57:00.000Z",
+        "depth": 12,
+        "magnitude": 3.2,
+        "mmi": 3,
+        "locality": "Fixture locality",
+        "quality": "best"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          174.0,
+          -41.0
+        ]
+      },
+      "properties": {
+        "publicID": "fx-mmi2",
+        "time": "2026-09-03T18:56:00.000Z",
+        "depth": 12,
+        "magnitude": 2.1,
+        "mmi": 2,
+        "locality": "Fixture locality",
+        "quality": "best"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          174.0,
+          -41.0
+        ]
+      },
+      "properties": {
+        "publicID": "fx-deleted",
+        "time": "2026-09-03T18:55:00.000Z",
+        "depth": 12,
+        "magnitude": 7.0,
+        "mmi": 8,
+        "locality": "Fixture locality",
+        "quality": "deleted"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          174.0,
+          -41.0
+        ]
+      },
+      "properties": {
+        "publicID": "fx-old",
+        "time": "2026-09-03T17:30:00.000Z",
+        "depth": 12,
+        "magnitude": 7.0,
+        "mmi": 8,
+        "locality": "Fixture locality",
+        "quality": "best"
+      }
+    }
+  ]
+}

@@ -1,0 +1,35 @@
+id: feature-volcano-val
+version: 1
+kind: feature
+title: Volcanic alert level summary
+summary: >
+  Alert level for each GeoNet-monitored volcano, highest first, mirroring the
+  Volcanic alert level summary block of the beta home page. Data comes from the
+  volcanic alert level endpoint; names and volcano types are static because the
+  feed does not carry them.
+
+requiresBase: ">=1 <2"
+
+slots:
+  body: slots/body.html
+
+# Defaults a composition may override with `config:`. Values are substituted
+# into the slot fragments as `{{config.<key>}}` and escaped.
+config:
+  heading: Volcanic alert level summary
+  endpoint: https://api.geonet.org.nz/volcano/val
+  # unrest = only volcanoes above level 0, as the beta home page does.
+  # all    = every volcano, as the beta /volcano page does.
+  show: unrest
+
+css:
+  - css/volcano-val.css
+
+js:
+  - js/volcano-val.mjs
+
+# Component stylesheets this markup relies on, linked from beta alongside the
+# base's design system CSS.
+remoteCss:
+  - https://beta.geonet.org.nz/assets/css-dev/06334093-card.css
+  - https://beta.geonet.org.nz/assets/css-dev/e270c990-card-volcano.css

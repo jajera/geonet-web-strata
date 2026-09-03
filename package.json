@@ -1,0 +1,19 @@
+{
+  "name": "geonet-web-strata",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Spec driven feature kit for the GeoNet website",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "build": "node site/build.mjs",
+    "serve": "node site/serve.mjs",
+    "dev": "node site/build.mjs && node site/serve.mjs",
+    "test": "node --check site/build.mjs && node --check site/serve.mjs"
+  },
+  "devDependencies": {
+    "yaml": "^2.8.1"
+  }
+}

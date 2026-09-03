@@ -1,0 +1,14 @@
+name: beta-shell
+title: Beta shell
+summary: >
+  Review artifact for the base spec. Pins base@1 with no features so the chrome
+  can be reviewed on its own.
+
+base: base@1
+
+features: []
+
+spec: base
+
+theme:
+  designSystem: link

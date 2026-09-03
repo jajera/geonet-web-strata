@@ -1,0 +1,18 @@
+name: haz-map-beta
+title: Shaking map on the beta shell
+summary: >
+  Review artifact for the haz map spec. Live data only — the map modules fetch
+  their own layers, so there are no fixture states.
+
+base: base@1
+
+features:
+  - feature-haz-map@1
+
+spec: haz-map
+
+theme:
+  designSystem: link
+
+data:
+  mode: live

@@ -1,0 +1,25 @@
+name: volcano-val-beta
+title: Volcanic alert levels on the beta shell
+summary: >
+  Review artifact for the volcanic alert level spec. Pins exact slice versions
+  so the spec never drifts against "latest".
+
+base: base@1
+
+features:
+  - feature-volcano-val@1
+
+spec: volcano-val
+
+theme:
+  # link = reference the beta design system stylesheets from beta.geonet.org.nz.
+  # none = render with the base fallback layer only.
+  designSystem: link
+
+data:
+  mode: live
+  # Fixture states live data cannot produce on demand.
+  states:
+    - quiet
+    - unrest
+    - eruption

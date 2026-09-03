@@ -1,0 +1,585 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <link type="image/x-icon" href="https://beta.geonet.org.nz/assets/images/favicon.ico" rel="shortcut icon">
+    <link href="https://beta.geonet.org.nz/assets/images/quake-apple-icon-57x57.png" rel="apple-touch-icon">
+    <title>GeoNet: {{title}}</title>
+    <meta name="robots" content="noindex, nofollow">
+    <meta name="strata:composition" content="{{composition}}">
+    <meta name="strata:stack" content="{{stack}}">
+    <meta name="strata:data-mode" content="{{dataMode}}">
+    {{styles}}
+    {{importmap}}
+</head>
+
+<body data-composition="{{composition}}" data-data-mode="{{dataMode}}">
+
+    <div class="alert-container">
+        <div class="site-alert">
+            <h2 class="heading">GeoNet Strata preview</h2>
+            <p class="message">
+                Shell copied from
+                <a href="https://beta.geonet.org.nz/">beta.geonet.org.nz</a>.
+                Composition <code>{{composition}}</code>
+                &middot; <code>{{stack}}</code>
+                &middot; data <code>{{dataMode}}</code>.
+                Not a GeoNet production page.
+                <a href="/">All compositions</a>
+            </p>
+        </div>
+        {{slot alert}}
+    </div>
+
+<header class="geonet-header -inactive">
+    <a class="logolink" href="https://beta.geonet.org.nz/">
+        <img class="logo" src="https://beta.geonet.org.nz/assets/dependencies/geonet-design-system/icons/geonet.svg">
+        <img class="logo -on-dark" aria-hidden="true" src="https://beta.geonet.org.nz/assets/dependencies/geonet-design-system/icons/geonet-on-dark.svg">
+    </a>
+
+    <div class="mobilemenu">
+		<a href="https://beta.geonet.org.nz/search" class="search"></a>
+		<button class="menubutton" aria-controls="primarynav secondarynav" aria-expanded="false">
+			<span class="text">Menu</span>
+		</button>
+	</div>
+	<nav id="primarynav" class="primarynav -mobile-closed">
+		<ul class="list">
+			<li class="item -current">
+				<a class="link -chevron" href="#" aria-controls="menu-earthquake" aria-expanded="false">
+					<span class="text">Earthquake</span>
+				</a>
+				<div id="menu-earthquake" class="geonet-menu" inert>
+					<div class="wrapper">
+						<div class="overview">
+							<h2 class="header">Earthquake</h2>
+							<p class="description">Find the latest quakes, search the full catalogue, and learn about our monitoring.</p>
+						</div>
+						<ul class="list">
+							<li class="item">
+								<a class="link" href="https://beta.geonet.org.nz/earthquake/weak" aria-expanded="false">Earthquakes</a>
+							</li>
+							<li class="item">
+								<a class="link" href="https://quakesearch.geonet.org.nz" aria-expanded="false">Search</a>
+							</li>
+							<li class="item">
+								<a class="link" href="https://beta.geonet.org.nz/earthquake/drums" aria-expanded="false">Drums</a>
+							</li>
+							<li class="item">
+								<a class="link" href="https://beta.geonet.org.nz/earthquake/forecast" aria-expanded="false">Forecasts</a>
+							</li>
+							<li class="item">
+								<a class="link" href="https://beta.geonet.org.nz/earthquake/story" aria-expanded="false">Historical events</a>
+							</li>
+							<li class="item">
+								<a class="link" href="https://beta.geonet.org.nz/earthquake/sse/hikurangi" aria-expanded="false">Slow slip</a>
+							</li>
+							<li class="item">
+								<a class="link" href="https://beta.geonet.org.nz/earthquake/swarms" aria-expanded="false">Swarms</a>
+							</li>
+							<li class="item">
+								<a class="link" href="https://beta.geonet.org.nz/earthquake/statistics" aria-expanded="false">Statistics</a>
+							</li>
+							<li class="item">
+								<a class="link" href="https://beta.geonet.org.nz/strong" aria-expanded="false">Strong motion</a>
+							</li>
+						</ul>
+						<ul class="list">
+							<li class="item">
+								<a class="link" href="https://beta.geonet.org.nz/earthquake/faq" aria-expanded="false">FAQ</a>
+							</li>
+							<li class="item">
+								<a class="link" href="https://beta.geonet.org.nz/earthquake/gallery" aria-expanded="false">Gallery</a>
+							</li>
+							<li class="item">
+								<a class="link" href="https://beta.geonet.org.nz/earthquake/glossary" aria-expanded="false">Glossary</a>
+							</li>
+							<li class="item">
+								<a class="link" href="https://beta.geonet.org.nz/earthquake/how" aria-expanded="false">How</a>
+							</li>
+							<li class="item">
+								<a class="link" href="https://beta.geonet.org.nz/earthquake/intensity" aria-expanded="false">Intensity</a>
+							</li>
+							<li class="item">
+								<a class="link" href="https://beta.geonet.org.nz/earthquake/videos" aria-expanded="false">Videos</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</li>
+			<li class="item">
+				<a class="link -chevron" href="#" aria-controls="menu-volcano" aria-expanded="false">
+					<span class="text">Volcano</span>
+				</a>
+				<div id="menu-volcano" class="geonet-menu" inert>
+					<div class="wrapper">
+						<div class="overview">
+							<h2 class="header">Volcano</h2>
+							<p class="description">View current volcanic activity, alert levels, and updates, and learn how
+							GeoNet monitors New Zealand's active volcanoes.
+							</p>
+						</div>
+						<ul class="list">
+							<li class="item">
+								<a class="link" href="https://beta.geonet.org.nz/volcano" aria-expanded="false">Volcanoes</a>
+							</li>
+							<li class="item">
+								<a class="link" href="https://beta.geonet.org.nz/volcano/vab" aria-expanded="false">Activity bulletins</a>
+							</li>
+							<li class="item">
+								<a class="link" href="https://beta.geonet.org.nz/volcano" aria-expanded="false">Alert levels</a>
+							</li>
+							<li class="item">
+								<a class="link" href="https://beta.geonet.org.nz/volcano/acc" aria-expanded="false">Aviation Colour Code</a>
+							</li>
+							<li class="item">
+								<a class="link" href="https://beta.geonet.org.nz/volcano/cameras" aria-expanded="false">Cameras</a>
+							</li>
+							<li class="item">
+								<a class="link" href="https://beta.geonet.org.nz/volcano/drums" aria-expanded="false">Drums</a>
+							</li>
+							<li class="item">
+								<a class="link" href="https://beta.geonet.org.nz/volcano/rsamssam" aria-expanded="false">RSAM &amp; SSAM</a>
+							</li>
+						</ul>
+                        <ul class="list">
+							<li class="item">
+								<a class="link" href="https://beta.geonet.org.nz/volcano/faq" aria-expanded="false">FAQ</a>
+							</li>
+							<li class="item">
+								<a class="link" href="https://beta.geonet.org.nz/volcano/gallery" aria-expanded="false">Gallery</a>
+							</li>
+							<li class="item">
+								<a class="link" href="https://beta.geonet.org.nz/volcano/glossary" aria-expanded="false">Glossary</a>
+							</li>
+							<li class="item">
+								<a class="link" href="https://beta.geonet.org.nz/volcano/how" aria-expanded="false">How</a>
+							</li>
+							<li class="item">
+								<a class="link" href="https://beta.geonet.org.nz/volcano/videos" aria-expanded="false">Videos</a>
+							</li>
+                        </ul>
+					</div>
+				</div>
+			</li>
+			<li class="item">
+				<a class="link -chevron" href="#" aria-controls="menu-landslide" aria-expanded="false">
+					<span class="text">Landslide</span>
+				</a>
+				<div id="menu-landslide" class="geonet-menu" inert>
+					<div class="wrapper">
+						<div class="overview">
+							<h2 class="header">Landslide</h2>
+							<p class="description">Find information on recent landslides, understand landslide hazards, and learn how
+							landslides are monitored and assessed.
+							</p>
+						</div>
+						<ul class="list">
+							<li class="item">
+								<a class="link" href="https://beta.geonet.org.nz/landslide/reports" aria-expanded="false">Reports</a>
+							</li>
+							<li class="item">
+								<a class="link" href="https://beta.geonet.org.nz/landslide/projects" aria-expanded="false">Monitoring &amp; projects</a>
+							</li>
+							<li class="item">
+								<a class="link" href="https://beta.geonet.org.nz/landslide/dam" aria-expanded="false">Dams</a>
+							</li>
+							<li class="item">
+								<a class="link" href="https://beta.geonet.org.nz/landslide/fox-glacier-valley" aria-expanded="false">Fox Glacier Valley</a>
+							</li>
+						</ul>
+                        <ul class="list">
+							<li class="item">
+								<a class="link" href="https://beta.geonet.org.nz/landslide/faq" aria-expanded="false">FAQ</a>
+							</li>
+							<li class="item">
+								<a class="link" href="https://beta.geonet.org.nz/landslide/glossary" aria-expanded="false">Glossary</a>
+							</li>
+							<li class="item">
+								<a class="link" href="https://beta.geonet.org.nz/landslide/how" aria-expanded="false">How</a>
+							</li>
+							<li class="item">
+								<a class="link" href="https://beta.geonet.org.nz/landslide/videos" aria-expanded="false">Videos</a>
+							</li>
+                        </ul>
+					</div>
+				</div>
+			</li>
+			<li class="item">
+				<a class="link -chevron" href="#" aria-controls="menu-tsunami" aria-expanded="false">
+					<span class="text">Tsunami</span>
+				</a>
+				<div id="menu-tsunami" class="geonet-menu" inert>
+					<div class="wrapper">
+						<div class="overview">
+							<h2 class="header">Tsunami</h2>
+							<p class="description">Learn about tsunami hazards, warning signs, and alerts,
+							and how tsunamis are monitored in New Zealand and the Pacific region.
+							</p>
+						</div>
+						<ul class="list">
+							<li class="item">
+								<a class="link" href="https://beta.geonet.org.nz/tsunami" aria-expanded="false">Gauges</a>
+							</li>
+							<li class="item">
+								<a class="link" href="https://beta.geonet.org.nz/tsunami/gauges" aria-expanded="false">Tsunami gauge network</a>
+							</li>
+							<li class="item">
+								<a class="link" href="https://beta.geonet.org.nz/tsunami/dart" aria-expanded="false">DART network</a>
+							</li>
+							<li class="item">
+								<a class="link" href="https://beta.geonet.org.nz/tsunami/story" aria-expanded="false">Historical events</a>
+							</li>
+						</ul>
+						<ul class="list">
+    						<li class="item">
+    							<a class="link" href="https://beta.geonet.org.nz/tsunami/faq" aria-expanded="false">FAQ</a>
+    						</li>
+    						<li class="item">
+    							<a class="link" href="https://beta.geonet.org.nz/tsunami/glossary" aria-expanded="false">Glossary</a>
+    						</li>
+    						<li class="item">
+    							<a class="link" href="https://beta.geonet.org.nz/tsunami/how" aria-expanded="false">How</a>
+    						</li>
+    						<li class="item">
+    							<a class="link" href="https://beta.geonet.org.nz/tsunami/videos" aria-expanded="false">Videos</a>
+    						</li>
+						</ul>
+					</div>
+				</div>
+			</li>
+			<li class="item">
+				<a class="link -chevron" href="#" aria-controls="menu-data-discovery" aria-expanded="false">
+					<span class="text">Data Discovery</span>
+				</a>
+				<div id="menu-data-discovery" class="geonet-menu" inert>
+					<div class="wrapper">
+						<div class="overview">
+							<h2 class="header">Data discovery</h2>
+							<p class="description">Explore GeoNet's data visualisations, maps, and catalogues.</p>
+						</div>
+						<ul class="list">
+							<li class="item">
+								<a class="link" href="https://beta.geonet.org.nz/data/network/sensor/search" aria-expanded="false">Sensor map</a>
+							</li>
+							<li class="item">
+								<a class="link" href="https://quakesearch.geonet.org.nz" aria-expanded="false">Quake search</a>
+							</li>
+							<li class="item">
+								<a class="link" href="https://beta.geonet.org.nz/data/gnss/map" aria-expanded="false">Geodetic map</a>
+							</li>
+							<li class="item">
+								<a class="link" href="https://beta.geonet.org.nz/data/geomag/dashboard" aria-expanded="false">Geomagnetic dashboard</a>
+							</li>
+							<li class="item">
+								<a class="link -external" href="https://strongmotion.geonet.org.nz" target="_blank" aria-expanded="false">Strong motion</a>
+							</li>
+							<li class="item">
+								<a class="link -external" href="https://tilde.geonet.org.nz/ui/data-discovery" target="_blank" aria-expanded="false">Tilde data discovery</a>
+							</li>
+							<li class="item">
+								<a class="link -external" href="https://tilde.geonet.org.nz/ui/data-exploration" target="_blank" aria-expanded="false">Tilde data exploration</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</li>
+			<li class="item">
+				<a class="link -chevron" href="#" aria-controls="menu-data-types" aria-expanded="false">
+					<span class="text">Data Types</span>
+				</a>
+				<div id="menu-data-types" class="geonet-menu" inert>
+					<div class="wrapper">
+						<div class="overview">
+							<h2 class="header">Data types</h2>
+							<p class="description">Get an overview of the different kinds of data available on GeoNet and what each one shows.</p>
+						</div>
+						<ul class="list">
+							<li class="item">
+								<a class="link" href="https://beta.geonet.org.nz/data/types/geodetic" aria-expanded="false">Geodetic</a>
+							</li>
+							<li class="item">
+								<a class="link" href="https://beta.geonet.org.nz/data/types/camera" aria-expanded="false">Cameras</a>
+							</li>
+							<li class="item">
+								<a class="link" href="https://beta.geonet.org.nz/data/types/eq_catalogue" aria-expanded="false">Earthquake catalogue</a>
+							</li>
+							<li class="item">
+								<a class="link" href="https://beta.geonet.org.nz/data/types/felt" aria-expanded="false">Felt reports</a>
+							</li>
+							<li class="item">
+								<a class="link" href="https://beta.geonet.org.nz/data/types/seismic_waveforms" aria-expanded="false">Seismic waveforms</a>
+							</li>
+							<li class="item">
+								<a class="link" href="https://beta.geonet.org.nz/data/types/strong_motion" aria-expanded="false">Strong motion data products</a>
+							</li>
+						</ul>
+						<ul class="list">
+							<li class="item">
+								<a class="link" href="https://beta.geonet.org.nz/data/types/tidal_gauges" aria-expanded="false">Tsunami gauges</a>
+							</li>
+							<li class="item">
+								<a class="link" href="https://beta.geonet.org.nz/data/types/geomag" aria-expanded="false">Geomagnetic</a>
+							</li>
+							<li class="item">
+								<a class="link" href="https://beta.geonet.org.nz/data/types/volcano_monitoring" aria-expanded="false">Volcano monitoring</a>
+							</li>
+							<li class="item">
+								<a class="link" href="https://beta.geonet.org.nz/data/types/environmental" aria-expanded="false">Environmental data</a>
+							</li>
+							<li class="item">
+    							<a class="link -external" href="https://shakinglayers.geonet.org.nz" target="_blank" aria-expanded="false">Shaking layers data</a>
+							</li>
+							<li class="item">
+								<a class="link" href="https://beta.geonet.org.nz/data/types/structural_arrays" aria-expanded="false">Structural arrays</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</li>
+			<li class="item">
+				<a class="link -chevron" href="#" aria-controls="menu-data-access" aria-expanded="false">
+					<span class="text">Data Access</span>
+				</a>
+				<div id="menu-data-discovery" class="geonet-menu" inert>
+					<div class="wrapper">
+						<div class="overview">
+							<h2 class="header">Data access</h2>
+							<p class="description">Find ways to view, download, and use GeoNet data and services.</p>
+						</div>
+						<ul class="list">
+							<li class="item">
+								<a class="link" href="https://beta.geonet.org.nz/data/access/FDSN" aria-expanded="false">FDSN</a>
+							</li>
+							<li class="item">
+							    <a class="link -external" href="https://wfs.geonet.org.nz" target="_blank" aria-expanded="false">WFS</a>
+							</li>
+							<li class="item">
+							    <a class="link -external" href="https://api.geonet.org.nz" target="_blank" aria-expanded="false">GeoNet API</a>
+							</li>
+							<li class="item">
+							    <a class="link -external" href="https://tilde.geonet.org.nz" target="_blank" aria-expanded="false">Tilde time series API</a>
+							</li>
+							<li class="item">
+								<a class="link -external" href="https://shakinglayers.geonet.org.nz/api" target="_blank" aria-expanded="false">Shaking layers API</a>
+							</li>
+							<li class="item">
+								<a class="link -external" href="https://data.geonet.org.nz" target="_blank" aria-expanded="false">Data API</a>
+							</li>
+							<li class="item">
+								<a class="link" href="https://beta.geonet.org.nz/data/access/aws" aria-expanded="false">AWS open data</a>
+							</li>
+							<li class="item">
+								<a class="link" href="https://beta.geonet.org.nz/data/access/tutorials" aria-expanded="false">Data tutorials</a>
+							</li>
+
+						</ul>
+					</div>
+				</div>
+			</li>
+		</ul>
+	</nav>
+	<nav id="secondarynav" class="secondarynav -mobile-closed">
+		<ul class="list">
+			<li class="item ">
+				<a class="link" href="https://beta.geonet.org.nz/news">
+					<span class="text">News</span>
+				</a>
+			</li>
+			<li class="item ">
+				<a class="link" href="https://beta.geonet.org.nz/about">
+					<span class="text">About</span>
+				</a>
+			</li>
+			<li class="item ">
+				<a href="https://earthsciences.nz" class="link -external">
+					<span class="text">Earth Sciences NZ</span>
+				</a>
+			</li>
+			<li class="item ">
+				<a href="https://beta.geonet.org.nz/search" class="link -search">
+					<span class="text">Search</span>
+				</a>
+			</li>
+		</ul>
+	</nav>
+	<div class="divider">
+		<span class="indicator"></span>
+	</div>
+</header>
+
+    {{slot hero}}
+
+    <div class="layout-container">
+        <div class="layout-container-band">
+            {{slot bandBefore}}
+        </div>
+        <div class="layout-two-col">
+            <div class="layout-main" id="main">
+                {{slot body}}
+            </div>
+            <aside class="layout-side">
+                {{slot sidebar}}
+            </aside>
+        </div>
+        <div class="layout-container-band">
+            {{slot bandAfter}}
+        </div>
+    </div>
+
+<footer class="geonet-footer">
+    <div class="graphic"></div>
+    <div class="footer-body">
+        <div class="content">
+            <div class="link-lists">
+                <div class="link-list">
+                    <h3 class="header">Hazards</h3>
+                    <ul class="links">
+                        <li><a class="link" href="https://beta.geonet.org.nz/earthquake/how">Earthquakes</a></li>
+                        <li><a class="link" href="https://beta.geonet.org.nz/landslide/how">Landslides</a></li>
+                        <li><a class="link" href="https://beta.geonet.org.nz/tsunami/how">Tsunami</a></li>
+                        <li><a class="link" href="https://beta.geonet.org.nz/volcano/how">Volcano</a></li>
+                    </ul>
+                </div>
+                <div class="link-list">
+                    <h3 class="header">Data</h3>
+                    <ul class="links">
+                        <li>
+                            <a class="link" href="https://beta.geonet.org.nz/data/network/sensor/search">
+                                Sensor network map
+                            </a>
+                        </li>
+                        <li>
+                            <a class="link -external -match" href="https://tilde.geonet.org.nz/ui/data-discovery" target="_blank" rel="nofollow noopener">
+                                Tilde data discovery
+                            </a>
+                        </li>
+                        
+                        
+                        
+                        
+                        
+                    </ul>
+                </div>
+                <div class="link-list">
+                    <h3 class="header">Keep in touch</h3>
+                    <ul class="links">
+                        <li><a class="link" href="https://beta.geonet.org.nz/contact">Contact us</a></li>
+                        <div class="link-list">
+                            <ul class="links -horizontal -social">
+                                <li>
+                                    <a class="link" href="https://www.facebook.com/geonetnz/" target="_blank" rel="nofollow noopener">
+                                        <img src="https://beta.geonet.org.nz/assets/dependencies/geonet-design-system/icons/facebook.svg">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="link" href="https://twitter.com/geonet" target="_blank" rel="nofollow noopener">
+                                        <img src="https://beta.geonet.org.nz/assets/dependencies/geonet-design-system/icons/x.svg">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="link" href="https://www.instagram.com/geonet_nz/" target="_blank" rel="nofollow noopener">
+                                        <img src="https://beta.geonet.org.nz/assets/dependencies/geonet-design-system/icons/instagram.svg">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="link" href="https://www.youtube.com/user/GeoNetNZ" target="_blank" rel="nofollow noopener">
+                                        <img src="https://beta.geonet.org.nz/assets/dependencies/geonet-design-system/icons/youtube.svg">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="link" href="https://github.com/GeoNet" target="_blank" rel="nofollow noopener">
+                                        <img src="https://beta.geonet.org.nz/assets/dependencies/geonet-design-system/icons/github.svg">
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </ul>
+                </div>
+                <div class="link-list">
+                    <h3 class="header">Download our app</h3>
+                    <ul class="links">
+                        <li>
+                            <a class="link" href="https://itunes.apple.com/nz/app/geonet-quake/id533054360?mt=8" target="_blank" rel="nofollow noopener">
+                                <img src="https://beta.geonet.org.nz/assets/dependencies/geonet-design-system/icons/ios-app.svg">
+                            </a>
+                        </li>
+                        <li>
+                            <a class="link" href="https://play.google.com/store/apps/details?id=nz.org.geonet.quake&hl=en" target="_blank" rel="nofollow noopener">
+                                <img src="https://beta.geonet.org.nz/assets/dependencies/geonet-design-system/icons/android-app.svg">
+                            </a>
+                        </li>
+                        
+                    </ul>
+                </div>
+            </div>
+            <div class="logo-container">
+                <div class="link-list">
+                    <ul class="links -horizontal -logos">
+                        <li>
+                            <a class="link" href="https://beta.geonet.org.nz/">
+                                <img src="https://beta.geonet.org.nz/assets/dependencies/geonet-design-system/icons/geonet-on-dark.svg">
+                            </a>
+                        </li>
+                        <li>
+                            <a class="link" href="https://earthsciences.nz" target="_blank" rel="nofollow noopener">
+                                <img src="https://beta.geonet.org.nz/assets/dependencies/geonet-design-system/icons/esnz-logo.svg">
+                            </a>
+                        </li>
+                        <li>
+                            <a class="link -inline" href="https://www.govt.nz" target="_blank" rel="nofollow noopener">
+                                <img src="https://beta.geonet.org.nz/assets/dependencies/geonet-design-system/icons/government-logo-on-dark-compact.svg">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="shieldcontainer">
+                    <a class="link" href="#" id="shielded-logo">
+                        <img src="https://beta.geonet.org.nz/assets/dependencies/geonet-design-system/icons/shielded.svg">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer-imprint">
+        <div class="content">
+            <p class="attribution">
+                GeoNet is a collaboration between <a href="https://www.earthsciences.nz/" target="_blank" rel="nofollow noopener">Earth 
+                Sciences NZ</a>, <a href="https://www.mbie.govt.nz/" target="_blank" rel="nofollow noopener">Ministry of Business Innovation 
+                and Employment Hīkina Whakatutuki</a> (MBIE), <a href="https://www.naturalhazards.govt.nz" target="_blank" rel="nofollow noopener">Natural 
+                Hazards Commission Toka Tū Ake</a> (NHC), <a href="https://www.linz.govt.nz/" target="_blank" rel="nofollow noopener">Land Information
+                New Zealand Toitū Te Whenua</a> (LINZ), and the <a href="https://www.civildefence.govt.nz/" target="_blank" rel="nofollow noopener">National Emergency Management Agency 
+                Te Rākau Whakamarumaru</a> (NEMA). GeoNet content is copyright Earth Sciences New Zealand and is licensed 
+                under a <a href="https://creativecommons.org/licenses/by/3.0/nz/" target="_blank" rel="nofollow noopener">Creative Commons Attribution 3.0 New Zealand License</a>
+            </p>
+            <div class="link-list">
+                <ul class="links -horizontal -imprint">
+                    
+                    
+                    
+                    
+                    
+                    
+
+                    <li><a class="link" href="https://beta.geonet.org.nz/about">About GeoNet</a></li>
+                    <li><a class="link" href="https://beta.geonet.org.nz/ngmc">NGMC</a></li>
+                    <li><a class="link" href="https://beta.geonet.org.nz/policy">Data Policy</a></li>
+                    <li><a class="link" href="https://beta.geonet.org.nz/disclaimer">Disclaimer</a></li>
+                    <li><a class="link" href="https://www.earthsciences.nz/privacy-policy" target="_blank" rel="nofollow noopener">Privacy</a></li>
+                    <li><a class="link" href="https://beta.geonet.org.nz/sponsors">Sponsors</a></li>
+                    <li><a class="link" href="https://beta.geonet.org.nz/reviews">Reviews Plans & Reports</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer>
+
+    {{fixtures}}
+    {{scripts}}
+    {{modules}}
+</body>
+
+</html>

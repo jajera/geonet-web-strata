@@ -1,0 +1,22 @@
+name: quake-counts-beta
+title: Quake counts on the beta shell
+summary: >
+  Review artifact for the quake counts spec. Pins exact slice versions so the
+  spec never drifts against "latest".
+
+base: base@1
+
+features:
+  - feature-quake-counts@1
+
+spec: quake-counts
+
+theme:
+  designSystem: link
+
+data:
+  mode: live
+  states:
+    - empty
+    - busy
+    - extreme

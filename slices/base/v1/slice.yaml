@@ -1,0 +1,47 @@
+id: base
+version: 1
+kind: base
+title: GeoNet beta shell
+summary: >
+  Document shell taken from the live beta.geonet.org.nz page frame: header,
+  footer, alert bar, layout grid. Features mount into the slots below and must
+  not fork any of it.
+
+# Slot names mirror the regions of the beta shell. `body` is the primary slot and
+# maps to `{{template "body" .}}` in the GeoNet Go templates. `bandBefore` and
+# `bandAfter` are full-width rows either side of the two-column grid, so a
+# feature can take the whole page width the way beta's home page rows do; a
+# fragment mounted there is expected to be a `.layout-container-band`.
+# Adding slots is backwards compatible: an unused slot renders as nothing, so
+# existing compositions do not need a new base version when this list grows.
+slots:
+  - alert
+  - hero
+  - bandBefore
+  - body
+  - sidebar
+  - bandAfter
+
+shell: shell.html
+
+css:
+  - css/base.css
+
+# Linked from beta rather than vendored (those packages are marked private).
+# The design system file is tokens and components; layout / page-hero / marker /
+# home are what make the frame look like the live site. A feature adds the
+# component stylesheets its own markup needs. Filenames carry beta's content
+# hash, so they need re-checking when beta redeploys.
+remoteCss:
+  - https://beta.geonet.org.nz/assets/dependencies/geonet-design-system/css/42615809-geonet-design-system.css
+  - https://beta.geonet.org.nz/assets/dependencies/geonet-fonts/css/7f1c3006-Aspekta.css
+  - https://beta.geonet.org.nz/assets/dependencies/geonet-fonts/css/6949a47c-Soehne.css
+  - https://beta.geonet.org.nz/assets/css-dev/03733179-layout.css
+  - https://beta.geonet.org.nz/assets/css-dev/c933f6f9-page-hero.css
+  - https://beta.geonet.org.nz/assets/css-dev/605b6e83-marker.css
+  - https://beta.geonet.org.nz/assets/css-dev/d1118d9f-home.css
+
+# Fetched at build time so the header menus run same-origin. Beta does not send
+# CORS headers on this module, so linking it from localhost would fail.
+remoteJs:
+  - https://beta.geonet.org.nz/assets/dependencies/geonet-design-system/js/3e5697c0-geonet-design-system.mjs

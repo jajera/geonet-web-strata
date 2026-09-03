@@ -1,0 +1,131 @@
+/* base@1 kit-only rules.
+ *
+ * Header, footer, layout, hero, tables and tokens come from the live beta
+ * stylesheets linked by the builder. This file only:
+ *   - rewrites hero pattern URLs that are root-relative on beta (they 404 here)
+ *   - hides an unused sidebar or band so a one-column feature is not left with a hole
+ *   - keeps MMI colours if marker.css is not linked (designSystem: none)
+ *   - styles the composition index
+ */
+
+.page-hero.-altogether {
+  background-image: url(https://beta.geonet.org.nz/assets/dependencies/geonet-design-system/icons/pattern-altogether.svg);
+}
+
+.page-hero.-earthquake {
+  background-image: url(https://beta.geonet.org.nz/assets/dependencies/geonet-design-system/icons/pattern-earthquake.svg);
+}
+
+.page-hero.-volcano {
+  background-image: url(https://beta.geonet.org.nz/assets/dependencies/geonet-design-system/icons/pattern-volcano.svg);
+}
+
+.page-hero.-tsunami {
+  background-image: url(https://beta.geonet.org.nz/assets/dependencies/geonet-design-system/icons/pattern-tsunami.svg);
+}
+
+.page-hero.-landslide {
+  background-image: url(https://beta.geonet.org.nz/assets/dependencies/geonet-design-system/icons/pattern-landslide.svg);
+}
+
+.layout-side:empty {
+  display: none;
+}
+
+.layout-two-col:not(:has(.layout-side:not(:empty))) {
+  grid-template-columns: 1fr;
+}
+
+/* A band slot is a wrapper the shell always emits, so it is whitespace rather
+ * than :empty when no feature mounts into it. */
+.layout-container-band:not(:has(*)) {
+  display: none;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+}
+
+/* MMI palette, matching beta marker.css, for designSystem: none. */
+.marker-mmi {
+  display: block;
+}
+
+.marker-mmi > .mmi0 { fill: transparent; }
+.marker-mmi > .mmi1 { fill: #fff7f3; }
+.marker-mmi > .mmi2 { fill: #feedde; }
+.marker-mmi > .mmi3 { fill: #fdd0a2; }
+.marker-mmi > .mmi4 { fill: #fdae6b; }
+.marker-mmi > .mmi5 { fill: #fd8d3c; }
+.marker-mmi > .mmi6 { fill: #f16913; }
+.marker-mmi > .mmi7 { fill: #d9480f; }
+.marker-mmi > .mmi8 { fill: #bd0026; }
+.marker-mmi > .mmi9 { fill: #a30021; }
+
+.strata-index {
+  max-width: var(--max-content-width, 68rem);
+  margin: 0 auto;
+  padding: var(--space-xl, 2.5rem) var(--page-margin, 1.5rem);
+}
+
+.strata-index .list {
+  padding: 0;
+  list-style: none;
+  display: grid;
+  gap: var(--space-m, 1rem);
+}
+
+.strata-index .item {
+  border: 1px solid var(--grey-40, #d8d4cf);
+  border-radius: var(--component-box-radius, 0.25rem);
+  padding: var(--space-m, 1rem);
+}
+
+.strata-index .item > .title {
+  font-weight: 700;
+  font-size: 1.125rem;
+}
+
+.strata-index .stack {
+  display: block;
+  margin-block: var(--space-2xs, 0.25rem);
+  color: var(--grey-70, #5b6767);
+}
+
+.strata-index .summary {
+  margin: var(--space-2xs, 0.25rem) 0;
+  color: var(--grey-70, #5b6767);
+  max-width: 40rem;
+}
+
+.strata-spec .crumb {
+  margin-bottom: var(--space-l, 1.5rem);
+}
+
+.strata-spec .spec {
+  max-width: 48rem;
+}
+
+.strata-spec .spec > .title {
+  margin-top: var(--space-l, 1.5rem);
+}
+
+.strata-spec .spec > table {
+  width: 100%;
+  margin-block: var(--space-m, 1rem);
+}
+
+.strata-spec .spec > pre {
+  overflow-x: auto;
+  padding: var(--space-m, 1rem);
+  background: var(--whenua-00, #f6f4f2);
+}
+
+.strata-spec .task {
+  margin: var(--space-2xs, 0.25rem) 0;
+}

@@ -1,0 +1,57 @@
+/* feature-felt-reports@1
+ *
+ * Uses base tokens only. No layout or shell styling lives here.
+ */
+
+.felt-reports > .title {
+  margin-top: 0;
+}
+
+.felt-reports > .status {
+  margin-block: var(--space-xs) var(--space-m);
+  color: var(--ink-muted, #5b6767);
+  font-size: 0.9375rem;
+}
+
+.felt-reports > .status[data-state='error'] {
+  color: #bd0026;
+  font-weight: 600;
+}
+
+.felt-reports > .summary {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-l);
+  margin-block: 0 var(--space-l);
+}
+
+.felt-reports .pair > .key {
+  font-size: 0.8125rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--ink-muted, #5b6767);
+}
+
+.felt-reports .pair > .value {
+  margin: var(--space-3xs, 0.125rem) 0 0;
+  font-family: var(--font-display, sans-serif);
+  font-size: 1.75rem;
+  font-weight: 700;
+  font-variant-numeric: tabular-nums;
+}
+
+.felt-reports .felttable td[data-felt-count],
+.felt-reports .felttable td[data-felt-total] {
+  font-variant-numeric: tabular-nums;
+}
+
+/* Rows with no reports stay in place so the intensity scale reads as a scale. */
+.felt-reports .felttable .trow.-empty {
+  color: var(--ink-muted, #5b6767);
+}
+
+.felt-reports > .note {
+  margin-block: var(--space-m) 0;
+  color: var(--ink-muted, #5b6767);
+  font-size: 0.875rem;
+}

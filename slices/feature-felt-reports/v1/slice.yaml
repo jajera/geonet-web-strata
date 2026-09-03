@@ -1,0 +1,27 @@
+id: feature-felt-reports
+version: 1
+kind: feature
+title: Felt reports in the last hour
+summary: >
+  Reported shaking for the last hour, aggregated by Modified Mercalli Intensity.
+  Mirrors the Felt Reports column of the beta home page table and reuses the
+  design system marker palette. Data comes from the reported intensity endpoint.
+
+requiresBase: ">=1 <2"
+
+slots:
+  body: slots/body.html
+  hero: slots/hero.html
+
+# Defaults a composition may override with `config:`. Values are substituted
+# into the slot fragments as `{{config.<key>}}` and escaped. Keys not listed
+# here are rejected at build time, so a typo in a composition is caught.
+config:
+  heading: Shaking reported in the last hour
+  endpoint: https://api.geonet.org.nz/intensity?type=reported
+
+css:
+  - css/felt-reports.css
+
+js:
+  - js/felt-reports.mjs
