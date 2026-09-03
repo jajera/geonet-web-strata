@@ -1,0 +1,100 @@
+<section class="quake-counts" data-quake-counts
+         data-slice="feature-quake-counts"
+         data-endpoint="{{config.endpoint}}">
+    <h2 class="title">{{config.heading}}</h2>
+
+    <p class="status" data-quake-status role="status" aria-live="polite">Loading quakes&hellip;</p>
+
+    <dl class="summary">
+        <div class="pair">
+            <dt class="key">Quakes</dt>
+            <dd class="value" data-quake-total>&mdash;</dd>
+        </div>
+        <div class="pair">
+            <dt class="key">Strongest</dt>
+            <dd class="value" data-quake-strongest>&mdash;</dd>
+        </div>
+    </dl>
+
+    <table class="felttable geonet-table -plain -full-width">
+        <caption class="visually-hidden">
+            Quakes in the last hour by Modified Mercalli Intensity, strongest first.
+        </caption>
+        <thead>
+            <tr class="trow">
+                <th scope="col" class="theader">Intensity</th>
+                <th scope="col" class="theader">Key</th>
+                <th scope="col" class="theader">Count</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr class="trow" data-mmi="8">
+                <td>Extreme</td>
+                <td>
+                    <svg width="26" height="26" class="marker-mmi" aria-hidden="true">
+                        <circle cx="13" cy="13" r="13" class="mmi8"></circle>
+                    </svg>
+                </td>
+                <td data-quake-count>&mdash;</td>
+            </tr>
+            <tr class="trow" data-mmi="7">
+                <td>Severe</td>
+                <td>
+                    <svg width="24" height="24" class="marker-mmi" aria-hidden="true">
+                        <circle cx="12" cy="12" r="12" class="mmi7"></circle>
+                    </svg>
+                </td>
+                <td data-quake-count>&mdash;</td>
+            </tr>
+            <tr class="trow" data-mmi="6">
+                <td>Strong</td>
+                <td>
+                    <svg width="22" height="22" class="marker-mmi" aria-hidden="true">
+                        <circle cx="11" cy="11" r="11" class="mmi6"></circle>
+                    </svg>
+                </td>
+                <td data-quake-count>&mdash;</td>
+            </tr>
+            <tr class="trow" data-mmi="5">
+                <td>Moderate</td>
+                <td>
+                    <svg width="20" height="20" class="marker-mmi" aria-hidden="true">
+                        <circle cx="10" cy="10" r="10" class="mmi5"></circle>
+                    </svg>
+                </td>
+                <td data-quake-count>&mdash;</td>
+            </tr>
+            <tr class="trow" data-mmi="4">
+                <td>Light</td>
+                <td>
+                    <svg width="18" height="18" class="marker-mmi" aria-hidden="true">
+                        <circle cx="9" cy="9" r="9" class="mmi4"></circle>
+                    </svg>
+                </td>
+                <td data-quake-count>&mdash;</td>
+            </tr>
+            <tr class="trow" data-mmi="3">
+                <td>Weak</td>
+                <td>
+                    <svg width="16" height="16" class="marker-mmi" aria-hidden="true">
+                        <circle cx="8" cy="8" r="8" class="mmi3"></circle>
+                    </svg>
+                </td>
+                <td data-quake-count>&mdash;</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr class="trow">
+                <th scope="row" class="theader">Total</th>
+                <td></td>
+                <td data-quake-total>&mdash;</td>
+            </tr>
+        </tfoot>
+    </table>
+
+    <p class="note">
+        Counts cover the last hour, MMI 3 and above, excluding deleted events,
+        matching the GeoNet home page. Source:
+        <a href="{{config.endpoint}}">quake?MMI=3</a>.
+    </p>
+</section>

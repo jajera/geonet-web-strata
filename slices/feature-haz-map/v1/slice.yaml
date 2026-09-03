@@ -1,0 +1,47 @@
+id: feature-haz-map
+version: 1
+kind: feature
+title: Shaking map (last hour)
+summary: >
+  MapLibre shaking map for the last hour — quakes, measured shaking and felt
+  reports — matching the haz-map block on the beta home page. Reuses beta's own
+  map modules rather than reimplementing MapLibre wiring.
+
+requiresBase: ">=1 <2"
+
+slots:
+  body: slots/body.html
+
+# No JSON fixtures: the map modules fetch live layers themselves. A composition
+# that requests fixture states must set fixtures: false on this feature, which
+# is the default here so multi-feature stacks stay live-only for the map.
+fixtures: false
+
+config:
+  heading: Shaking in the last hour
+  actionLabel: View all earthquakes
+  actionHref: https://beta.geonet.org.nz/earthquake
+
+css:
+  - css/haz-map.css
+
+# Entry module — side-effect init of #geonet-haz-map. Path-based map type stays
+# HOME for any kit URL that is not /earthquake/….
+remoteJs:
+  - https://beta.geonet.org.nz/assets/js/a32b8ef9-geonet-map-quake.mjs
+
+# Import-map only; pulled in by the entry module.
+remoteImports:
+  - https://beta.geonet.org.nz/assets/js/b9a6e9f8-geonet-map.mjs
+  - https://beta.geonet.org.nz/assets/js/056251ec-iconUtils.mjs
+  - https://beta.geonet.org.nz/assets/js/186fb701-dateUtils.mjs
+  - https://beta.geonet.org.nz/assets/js/21440460-shakingUtils.mjs
+
+# MapLibre as a classic global, loaded before the ES modules.
+remoteScripts:
+  - https://beta.geonet.org.nz/assets/dependencies/maplibre-gl/bc710160-maplibre-gl.js
+
+remoteCss:
+  - https://beta.geonet.org.nz/assets/css-dev/7fa63604-haz-map.css
+  - https://beta.geonet.org.nz/assets/dependencies/maplibre-gl/e4711ce4-maplibre-gl.css
+  - https://beta.geonet.org.nz/assets/css/3df46a04-geonet-maplibre.css

@@ -1,0 +1,195 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          174.0,
+          -41.0
+        ]
+      },
+      "properties": {
+        "publicID": "fx-w1",
+        "time": "2026-09-03T18:55:00.000Z",
+        "depth": 12,
+        "magnitude": 3.1,
+        "mmi": 3,
+        "locality": "10 km east of Masterton",
+        "quality": "best"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          174.0,
+          -41.0
+        ]
+      },
+      "properties": {
+        "publicID": "fx-w2",
+        "time": "2026-09-03T18:48:00.000Z",
+        "depth": 12,
+        "magnitude": 3.4,
+        "mmi": 3,
+        "locality": "Fixture locality",
+        "quality": "best"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          174.0,
+          -41.0
+        ]
+      },
+      "properties": {
+        "publicID": "fx-w3",
+        "time": "2026-09-03T18:42:00.000Z",
+        "depth": 12,
+        "magnitude": 3.0,
+        "mmi": 3,
+        "locality": "Fixture locality",
+        "quality": "best"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          174.0,
+          -41.0
+        ]
+      },
+      "properties": {
+        "publicID": "fx-w4",
+        "time": "2026-09-03T18:35:00.000Z",
+        "depth": 12,
+        "magnitude": 3.2,
+        "mmi": 3,
+        "locality": "Fixture locality",
+        "quality": "best"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          174.0,
+          -41.0
+        ]
+      },
+      "properties": {
+        "publicID": "fx-l1",
+        "time": "2026-09-03T18:52:00.000Z",
+        "depth": 12,
+        "magnitude": 4.1,
+        "mmi": 4,
+        "locality": "Near Palmerston North",
+        "quality": "best"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          174.0,
+          -41.0
+        ]
+      },
+      "properties": {
+        "publicID": "fx-l2",
+        "time": "2026-09-03T18:20:00.000Z",
+        "depth": 12,
+        "magnitude": 4.0,
+        "mmi": 4,
+        "locality": "Fixture locality",
+        "quality": "best"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          174.0,
+          -41.0
+        ]
+      },
+      "properties": {
+        "publicID": "fx-m1",
+        "time": "2026-09-03T18:45:00.000Z",
+        "depth": 12,
+        "magnitude": 5.0,
+        "mmi": 5,
+        "locality": "20 km west of Napier",
+        "quality": "best"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          174.0,
+          -41.0
+        ]
+      },
+      "properties": {
+        "publicID": "fx-s1",
+        "time": "2026-09-03T18:38:00.000Z",
+        "depth": 12,
+        "magnitude": 5.8,
+        "mmi": 6,
+        "locality": "Fixture locality",
+        "quality": "best"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          174.0,
+          -41.0
+        ]
+      },
+      "properties": {
+        "publicID": "fx-old",
+        "time": "2026-09-03T17:30:00.000Z",
+        "depth": 12,
+        "magnitude": 6.2,
+        "mmi": 7,
+        "locality": "Fixture locality",
+        "quality": "best"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          174.0,
+          -41.0
+        ]
+      },
+      "properties": {
+        "publicID": "fx-deleted",
+        "time": "2026-09-03T18:57:00.000Z",
+        "depth": 12,
+        "magnitude": 7.0,
+        "mmi": 8,
+        "locality": "Fixture locality",
+        "quality": "deleted"
+      }
+    }
+  ]
+}

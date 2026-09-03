@@ -1,0 +1,27 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [174.776, -41.286] },
+      "properties": { "mmi": 6, "count": 4821, "count_mmi": { "6": 3120, "5": 1701 } }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [172.639, -43.525] },
+      "properties": { "mmi": 5, "count": 3907, "count_mmi": { "5": 2402, "4": 1505 } }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [174.763, -36.848] },
+      "properties": { "mmi": 4, "count": 5140, "count_mmi": { "4": 3011, "3": 2129 } }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [176.166, -38.137] },
+      "properties": { "mmi": 7, "count": 1288, "count_mmi": { "7": 902, "6": 386 } }
+    }
+  ],
+  "count_mmi": { "7": 902, "6": 3506, "5": 4103, "4": 4516, "3": 2129 },
+  "count": 15156
+}

@@ -1,0 +1,22 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  ci:
+    uses: actionsforge/actions/.github/workflows/node-ci-workflow.yml@main
+    with:
+      node-version: "24"
+      build: true
+      build-command: npm run build
+      test-command: npm test
+      typecheck: false
+      audit: false

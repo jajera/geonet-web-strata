@@ -1,0 +1,104 @@
+<section class="felt-reports" data-felt-reports
+         data-slice="feature-felt-reports"
+         data-endpoint="{{config.endpoint}}">
+    <h2 class="title">{{config.heading}}</h2>
+
+    <p class="status" data-felt-status role="status" aria-live="polite">Loading felt reports&hellip;</p>
+
+    <dl class="summary">
+        <div class="pair">
+            <dt class="key">Reports</dt>
+            <dd class="value" data-felt-total>&mdash;</dd>
+        </div>
+        <div class="pair">
+            <dt class="key">Places reporting</dt>
+            <dd class="value" data-felt-locations>&mdash;</dd>
+        </div>
+        <div class="pair">
+            <dt class="key">Strongest</dt>
+            <dd class="value" data-felt-strongest>&mdash;</dd>
+        </div>
+    </dl>
+
+    <table class="felttable geonet-table -plain -full-width">
+        <caption class="visually-hidden">
+            Felt reports in the last hour by Modified Mercalli Intensity, strongest first.
+        </caption>
+        <thead>
+            <tr class="trow">
+                <th scope="col" class="theader">Intensity</th>
+                <th scope="col" class="theader">Key</th>
+                <th scope="col" class="theader">Reports</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr class="trow" data-mmi="8">
+                <td>Extreme</td>
+                <td>
+                    <svg width="18" height="18" class="marker-mmi" aria-hidden="true">
+                        <rect x="0" y="0" width="18" height="18" class="mmi8"></rect>
+                    </svg>
+                </td>
+                <td data-felt-count>&mdash;</td>
+            </tr>
+            <tr class="trow" data-mmi="7">
+                <td>Severe</td>
+                <td>
+                    <svg width="16" height="16" class="marker-mmi" aria-hidden="true">
+                        <rect x="0" y="0" width="16" height="16" class="mmi7"></rect>
+                    </svg>
+                </td>
+                <td data-felt-count>&mdash;</td>
+            </tr>
+            <tr class="trow" data-mmi="6">
+                <td>Strong</td>
+                <td>
+                    <svg width="14" height="14" class="marker-mmi" aria-hidden="true">
+                        <rect x="0" y="0" width="14" height="14" class="mmi6"></rect>
+                    </svg>
+                </td>
+                <td data-felt-count>&mdash;</td>
+            </tr>
+            <tr class="trow" data-mmi="5">
+                <td>Moderate</td>
+                <td>
+                    <svg width="12" height="12" class="marker-mmi" aria-hidden="true">
+                        <rect x="0" y="0" width="12" height="12" class="mmi5"></rect>
+                    </svg>
+                </td>
+                <td data-felt-count>&mdash;</td>
+            </tr>
+            <tr class="trow" data-mmi="4">
+                <td>Light</td>
+                <td>
+                    <svg width="10" height="10" class="marker-mmi" aria-hidden="true">
+                        <rect x="0" y="0" width="10" height="10" class="mmi4"></rect>
+                    </svg>
+                </td>
+                <td data-felt-count>&mdash;</td>
+            </tr>
+            <tr class="trow" data-mmi="3">
+                <td>Weak</td>
+                <td>
+                    <svg width="8" height="8" class="marker-mmi" aria-hidden="true">
+                        <rect x="0" y="0" width="8" height="8" class="mmi3"></rect>
+                    </svg>
+                </td>
+                <td data-felt-count>&mdash;</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr class="trow">
+                <th scope="row" class="theader">Total</th>
+                <td></td>
+                <td data-felt-total>&mdash;</td>
+            </tr>
+        </tfoot>
+    </table>
+
+    <p class="note">
+        Unnoticeable reports (MMI 2 and below) are excluded from the total, matching the
+        GeoNet home page. Source:
+        <a href="{{config.endpoint}}">reported intensity</a>.
+    </p>
+</section>

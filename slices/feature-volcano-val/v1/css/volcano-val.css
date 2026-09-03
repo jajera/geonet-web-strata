@@ -1,0 +1,52 @@
+/* feature-volcano-val@1
+ *
+ * Card, alert-level and tag styling come from beta's own card.css,
+ * card-volcano.css and design system (see remoteCss in slice.yaml). This file
+ * is the status line plus a fallback so the `designSystem: none` theme is still
+ * readable and still distinguishes alert levels.
+ */
+
+.home-volcano > .title {
+  margin-top: 0;
+}
+
+.home-volcano > .status {
+  margin-block: var(--space-xs) var(--space-m);
+  color: var(--ink-muted, #5b6767);
+  font-size: 0.9375rem;
+}
+
+.home-volcano > .status[data-state='error'] {
+  color: #bd0026;
+  font-weight: 600;
+}
+
+.home-volcano > .card-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.home-volcano > .notes {
+  font-size: 0.875rem;
+}
+
+/* Beta's own modifier for a card that is filtered out. Declared here too so the
+ * fallback theme hides quiet volcanoes the same way. */
+.card-volcano.-hidden {
+  display: none;
+}
+
+/* Alert level palette, matching the design system's --function-volcanic-alert-*
+ * tokens, for designSystem: none. Level is also printed as a number, so colour
+ * is never the only signal. */
+.card-val.-level-0 { background-color: var(--function-volcanic-alert-0, #e7deec); }
+.card-val.-level-1 { background-color: var(--function-volcanic-alert-1, #dcc9e0); }
+.card-val.-level-2 { background-color: var(--function-volcanic-alert-2, #d1b5d3); }
+.card-val.-level-3 { background-color: var(--function-volcanic-alert-3, #a867a2); color: var(--grey-00, #fff); }
+.card-val.-level-4 { background-color: var(--function-volcanic-alert-4, #954990); color: var(--grey-00, #fff); }
+.card-val.-level-5 { background-color: var(--function-volcanic-alert-5, #832c82); color: var(--grey-00, #fff); }
+
+.card-volcano [data-val-level] {
+  font-variant-numeric: tabular-nums;
+}

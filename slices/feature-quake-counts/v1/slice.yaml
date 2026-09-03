@@ -1,0 +1,25 @@
+id: feature-quake-counts
+version: 1
+kind: feature
+title: Quakes in the last hour
+summary: >
+  Quakes of MMI 3 and above in the last hour, aggregated by Modified Mercalli
+  Intensity. Mirrors the Quakes column of the beta home page table (circles, not
+  squares). Data comes from the quake endpoint, filtered to the last hour and
+  excluding deleted events.
+
+requiresBase: ">=1 <2"
+
+slots:
+  body: slots/body.html
+  hero: slots/hero.html
+
+config:
+  heading: Quakes in the last hour
+  endpoint: https://api.geonet.org.nz/quake?MMI=3
+
+css:
+  - css/quake-counts.css
+
+js:
+  - js/quake-counts.mjs

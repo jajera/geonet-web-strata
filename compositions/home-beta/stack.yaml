@@ -1,0 +1,28 @@
+name: home-beta
+title: Home page assembly (map + quakes + felt reports + volcanic alert levels)
+summary: >
+  Four feature slices on one page in beta home order: shaking map, quake counts,
+  felt reports in the main column; volcanic alert levels in the sidebar. Heroes
+  omitted. Live only. The combined two-column felttable is still two tables.
+
+base: base@1
+
+features:
+  - feature-haz-map@1
+
+  - slice: feature-quake-counts@1
+    omit: [hero]
+  - slice: feature-felt-reports@1
+    omit: [hero]
+
+  - slice: feature-volcano-val@1
+    at: { body: sidebar }
+    config:
+      heading: Volcanic alert level summary
+      show: unrest
+
+theme:
+  designSystem: link
+
+data:
+  mode: live

@@ -1,0 +1,29 @@
+/* feature-haz-map@1
+ *
+ * Map chrome comes from beta haz-map.css / maplibre / geonet-maplibre (remoteCss).
+ * This file only covers the home-shaking wrapper bits that home.css already
+ * styles on beta, plus a designSystem: none fallback height.
+ */
+
+.home-shaking > .title {
+  margin-top: 0;
+}
+
+.home-shaking > .buttons {
+  display: flex;
+  gap: var(--space-s, 0.75rem);
+  margin-bottom: var(--space-s, 0.75rem);
+}
+
+.home-shaking > .haz-map {
+  margin-bottom: var(--space-l, 1.5rem);
+  min-height: 640px;
+  height: 640px;
+}
+
+/* Expand icon is a mask in beta's haz-map.css pointing at /assets/images/… —
+ * that 404s here. Point it at beta explicitly when the remote sheet is linked. */
+.haz-map-fullscreen::after {
+  -webkit-mask: url(https://beta.geonet.org.nz/assets/images/icon-expand.svg) no-repeat center / contain;
+  mask: url(https://beta.geonet.org.nz/assets/images/icon-expand.svg) no-repeat center / contain;
+}

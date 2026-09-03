@@ -1,0 +1,33 @@
+<div class="home-shaking" data-haz-map data-slice="feature-haz-map">
+    <h2 class="title">{{config.heading}}</h2>
+    <div class="buttons">
+        <a href="{{config.actionHref}}" class="button -secondary" role="button">{{config.actionLabel}}</a>
+    </div>
+
+    <div class="haz-map -full-width">
+        <div id="geonet-haz-map" class="map" role="region" aria-label="Shaking map for the last hour"></div>
+        <div class="footer">
+            <div class="tooltip-icon -on-dark">
+                <button class="button -tertiary" popovertarget="map-copyright" type="button">Copyright</button>
+                <span id="map-copyright" popover="auto" class="popover">
+                    Background map data copyright
+                    <a href="https://www.linz.govt.nz/" target="_blank" rel="noopener">Toitū Te Whenua</a>
+                    CC BY 4.0.
+                </span>
+            </div>
+            <button class="button -secondary -small haz-map-fullscreen"
+                    type="button"
+                    data-modal-target="haz-map-modal"
+                    data-map="geonet-haz-map">View full screen map</button>
+        </div>
+    </div>
+</div>
+
+<dialog id="haz-map-modal" class="haz-map-modal">
+    <div class="content">
+        <div class="body"></div>
+        <div class="footer">
+            <button type="button" class="button -secondary close">Close</button>
+        </div>
+    </div>
+</dialog>

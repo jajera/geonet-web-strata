@@ -1,0 +1,57 @@
+/* feature-quake-counts@1
+ *
+ * Uses base tokens only. Circle markers come from beta marker.css / the
+ * fallback MMI palette on the base slice.
+ */
+
+.quake-counts > .title {
+  margin-top: 0;
+}
+
+.quake-counts > .status {
+  margin-block: var(--space-xs) var(--space-m);
+  color: var(--ink-muted, #5b6767);
+  font-size: 0.9375rem;
+}
+
+.quake-counts > .status[data-state='error'] {
+  color: #bd0026;
+  font-weight: 600;
+}
+
+.quake-counts > .summary {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-l);
+  margin-block: 0 var(--space-l);
+}
+
+.quake-counts .pair > .key {
+  font-size: 0.8125rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--ink-muted, #5b6767);
+}
+
+.quake-counts .pair > .value {
+  margin: var(--space-3xs, 0.125rem) 0 0;
+  font-family: var(--font-display, sans-serif);
+  font-size: 1.75rem;
+  font-weight: 700;
+  font-variant-numeric: tabular-nums;
+}
+
+.quake-counts .felttable td[data-quake-count],
+.quake-counts .felttable td[data-quake-total] {
+  font-variant-numeric: tabular-nums;
+}
+
+.quake-counts .felttable .trow.-empty {
+  color: var(--ink-muted, #5b6767);
+}
+
+.quake-counts > .note {
+  margin-block: var(--space-m) 0;
+  color: var(--ink-muted, #5b6767);
+  font-size: 0.875rem;
+}

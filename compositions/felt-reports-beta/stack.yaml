@@ -1,0 +1,30 @@
+name: felt-reports-beta
+title: Felt reports on the beta shell
+summary: >
+  Review artifact for the felt reports spec. Pins exact slice versions so the
+  spec never drifts against "latest".
+
+base: base@1
+
+features:
+  # A bare ref mounts the slice in the slots it declares. Use the object form to
+  # move it or retune it, e.g.
+  #   - slice: feature-felt-reports@1
+  #     at: { body: bandAfter }
+  #     config: { heading: Reported shaking, last hour }
+  - feature-felt-reports@1
+
+spec: felt-reports
+
+theme:
+  # link = reference the beta design system stylesheets from beta.geonet.org.nz.
+  # none = render with the base fallback layer only.
+  designSystem: link
+
+data:
+  mode: live
+  # Fixture states live data cannot produce on demand.
+  states:
+    - empty
+    - overflow
+    - extreme
