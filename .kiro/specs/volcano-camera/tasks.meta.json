@@ -1,0 +1,329 @@
+{
+  "pbtResults": {},
+  "executionHistory": {
+    "1.1 Create the slice manifest `slices/feature-volcano-camera/v1/slice.yaml`": [
+      {
+        "executionId": "9967a4b8-088f-4298-b36f-746bd3606f54",
+        "chatSessionId": "sess_f25e3eec-176a-4546-b800-8f2b56986654",
+        "timestamp": 1788475046436
+      },
+      {
+        "executionId": "9967a4b8-088f-4298-b36f-746bd3606f54",
+        "chatSessionId": "sess_f25e3eec-176a-4546-b800-8f2b56986654",
+        "timestamp": 1788475057547
+      },
+      {
+        "executionId": "9967a4b8-088f-4298-b36f-746bd3606f54",
+        "chatSessionId": "sess_f25e3eec-176a-4546-b800-8f2b56986654",
+        "timestamp": 1788475156121
+      }
+    ],
+    "1.2 Create the composition `compositions/volcano-camera-beta/stack.yaml`": [
+      {
+        "executionId": "9967a4b8-088f-4298-b36f-746bd3606f54",
+        "chatSessionId": "sess_f25e3eec-176a-4546-b800-8f2b56986654",
+        "timestamp": 1788475046516
+      },
+      {
+        "executionId": "9967a4b8-088f-4298-b36f-746bd3606f54",
+        "chatSessionId": "sess_f25e3eec-176a-4546-b800-8f2b56986654",
+        "timestamp": 1788475058516
+      },
+      {
+        "executionId": "9967a4b8-088f-4298-b36f-746bd3606f54",
+        "chatSessionId": "sess_f25e3eec-176a-4546-b800-8f2b56986654",
+        "timestamp": 1788475157249
+      }
+    ],
+    "2.1 Build the `home-camera` block skeleton with heading, status line and notes link": [
+      {
+        "executionId": "9967a4b8-088f-4298-b36f-746bd3606f54",
+        "chatSessionId": "sess_f25e3eec-176a-4546-b800-8f2b56986654",
+        "timestamp": 1788475046612
+      },
+      {
+        "executionId": "9967a4b8-088f-4298-b36f-746bd3606f54",
+        "chatSessionId": "sess_f25e3eec-176a-4546-b800-8f2b56986654",
+        "timestamp": 1788475168997
+      },
+      {
+        "executionId": "9967a4b8-088f-4298-b36f-746bd3606f54",
+        "chatSessionId": "sess_f25e3eec-176a-4546-b800-8f2b56986654",
+        "timestamp": 1788475329007
+      }
+    ],
+    "2.2 Add per-camera `card-camera` tiles inside a `.card-list -grid` container": [
+      {
+        "executionId": "9967a4b8-088f-4298-b36f-746bd3606f54",
+        "chatSessionId": "sess_f25e3eec-176a-4546-b800-8f2b56986654",
+        "timestamp": 1788475046672
+      },
+      {
+        "executionId": "9967a4b8-088f-4298-b36f-746bd3606f54",
+        "chatSessionId": "sess_f25e3eec-176a-4546-b800-8f2b56986654",
+        "timestamp": 1788475344376
+      },
+      {
+        "executionId": "9967a4b8-088f-4298-b36f-746bd3606f54",
+        "chatSessionId": "sess_f25e3eec-176a-4546-b800-8f2b56986654",
+        "timestamp": 1788475490696
+      }
+    ],
+    "3. Author the slice CSS `slices/feature-volcano-camera/v1/css/volcano-camera.css`": [
+      {
+        "executionId": "9967a4b8-088f-4298-b36f-746bd3606f54",
+        "chatSessionId": "sess_f25e3eec-176a-4546-b800-8f2b56986654",
+        "timestamp": 1788475046732
+      },
+      {
+        "executionId": "9967a4b8-088f-4298-b36f-746bd3606f54",
+        "chatSessionId": "sess_f25e3eec-176a-4546-b800-8f2b56986654",
+        "timestamp": 1788475527623
+      },
+      {
+        "executionId": "9967a4b8-088f-4298-b36f-746bd3606f54",
+        "chatSessionId": "sess_f25e3eec-176a-4546-b800-8f2b56986654",
+        "timestamp": 1788475635987
+      }
+    ],
+    "4. Confirm and wire beta card `remoteCss` in the slice manifest": [
+      {
+        "executionId": "9967a4b8-088f-4298-b36f-746bd3606f54",
+        "chatSessionId": "sess_f25e3eec-176a-4546-b800-8f2b56986654",
+        "timestamp": 1788475046835
+      },
+      {
+        "executionId": "9967a4b8-088f-4298-b36f-746bd3606f54",
+        "chatSessionId": "sess_f25e3eec-176a-4546-b800-8f2b56986654",
+        "timestamp": 1788475529041
+      },
+      {
+        "executionId": "9967a4b8-088f-4298-b36f-746bd3606f54",
+        "chatSessionId": "sess_f25e3eec-176a-4546-b800-8f2b56986654",
+        "timestamp": 1788475637073
+      }
+    ],
+    "5.1 Implement `readFixture(sliceId)` and `formatCaptured(iso, now)`": [
+      {
+        "executionId": "9967a4b8-088f-4298-b36f-746bd3606f54",
+        "chatSessionId": "sess_f25e3eec-176a-4546-b800-8f2b56986654",
+        "timestamp": 1788475046891
+      },
+      {
+        "executionId": "9967a4b8-088f-4298-b36f-746bd3606f54",
+        "chatSessionId": "sess_f25e3eec-176a-4546-b800-8f2b56986654",
+        "timestamp": 1788475170151
+      },
+      {
+        "executionId": "9967a4b8-088f-4298-b36f-746bd3606f54",
+        "chatSessionId": "sess_f25e3eec-176a-4546-b800-8f2b56986654",
+        "timestamp": 1788475332781
+      }
+    ],
+    "5.3 Implement `applySnapshot(root, entries, now)` and `setTileState(tile, state)`": [
+      {
+        "executionId": "9967a4b8-088f-4298-b36f-746bd3606f54",
+        "chatSessionId": "sess_f25e3eec-176a-4546-b800-8f2b56986654",
+        "timestamp": 1788475046943
+      },
+      {
+        "executionId": "9967a4b8-088f-4298-b36f-746bd3606f54",
+        "chatSessionId": "sess_f25e3eec-176a-4546-b800-8f2b56986654",
+        "timestamp": 1788475345564
+      },
+      {
+        "executionId": "9967a4b8-088f-4298-b36f-746bd3606f54",
+        "chatSessionId": "sess_f25e3eec-176a-4546-b800-8f2b56986654",
+        "timestamp": 1788475492070
+      }
+    ],
+    "5.5 Implement `wireImages(root)` and `setStatus(root, text, state)`": [
+      {
+        "executionId": "9967a4b8-088f-4298-b36f-746bd3606f54",
+        "chatSessionId": "sess_f25e3eec-176a-4546-b800-8f2b56986654",
+        "timestamp": 1788475047005
+      },
+      {
+        "executionId": "9967a4b8-088f-4298-b36f-746bd3606f54",
+        "chatSessionId": "sess_f25e3eec-176a-4546-b800-8f2b56986654",
+        "timestamp": 1788475171349
+      },
+      {
+        "executionId": "9967a4b8-088f-4298-b36f-746bd3606f54",
+        "chatSessionId": "sess_f25e3eec-176a-4546-b800-8f2b56986654",
+        "timestamp": 1788475331648
+      }
+    ],
+    "5.7 Implement `activate(root)` and wire the module to `document`": [
+      {
+        "executionId": "9967a4b8-088f-4298-b36f-746bd3606f54",
+        "chatSessionId": "sess_f25e3eec-176a-4546-b800-8f2b56986654",
+        "timestamp": 1788475047060
+      },
+      {
+        "executionId": "9967a4b8-088f-4298-b36f-746bd3606f54",
+        "chatSessionId": "sess_f25e3eec-176a-4546-b800-8f2b56986654",
+        "timestamp": 1788475530007
+      },
+      {
+        "executionId": "9967a4b8-088f-4298-b36f-746bd3606f54",
+        "chatSessionId": "sess_f25e3eec-176a-4546-b800-8f2b56986654",
+        "timestamp": 1788475634671
+      }
+    ],
+    "6. Checkpoint - Ensure module unit tests pass": [
+      {
+        "executionId": "9967a4b8-088f-4298-b36f-746bd3606f54",
+        "chatSessionId": "sess_f25e3eec-176a-4546-b800-8f2b56986654",
+        "timestamp": 1788475047129
+      },
+      {
+        "executionId": "9967a4b8-088f-4298-b36f-746bd3606f54",
+        "chatSessionId": "sess_f25e3eec-176a-4546-b800-8f2b56986654",
+        "timestamp": 1788475649051
+      },
+      {
+        "executionId": "9967a4b8-088f-4298-b36f-746bd3606f54",
+        "chatSessionId": "sess_f25e3eec-176a-4546-b800-8f2b56986654",
+        "timestamp": 1788475698408
+      }
+    ],
+    "7.1 Add snapshot images under `slices/feature-volcano-camera/v1/public/assets/volcano-camera/`": [
+      {
+        "executionId": "9967a4b8-088f-4298-b36f-746bd3606f54",
+        "chatSessionId": "sess_f25e3eec-176a-4546-b800-8f2b56986654",
+        "timestamp": 1788475047245
+      },
+      {
+        "executionId": "9967a4b8-088f-4298-b36f-746bd3606f54",
+        "chatSessionId": "sess_f25e3eec-176a-4546-b800-8f2b56986654",
+        "timestamp": 1788475172513
+      },
+      {
+        "executionId": "9967a4b8-088f-4298-b36f-746bd3606f54",
+        "chatSessionId": "sess_f25e3eec-176a-4546-b800-8f2b56986654",
+        "timestamp": 1788475330983
+      }
+    ],
+    "7.2 Write `loading.json` and `populated.json`": [
+      {
+        "executionId": "9967a4b8-088f-4298-b36f-746bd3606f54",
+        "chatSessionId": "sess_f25e3eec-176a-4546-b800-8f2b56986654",
+        "timestamp": 1788475047335
+      },
+      {
+        "executionId": "9967a4b8-088f-4298-b36f-746bd3606f54",
+        "chatSessionId": "sess_f25e3eec-176a-4546-b800-8f2b56986654",
+        "timestamp": 1788475346813
+      },
+      {
+        "executionId": "9967a4b8-088f-4298-b36f-746bd3606f54",
+        "chatSessionId": "sess_f25e3eec-176a-4546-b800-8f2b56986654",
+        "timestamp": 1788475493053
+      }
+    ],
+    "7.3 Write `empty.json` and `stale.json`": [
+      {
+        "executionId": "9967a4b8-088f-4298-b36f-746bd3606f54",
+        "chatSessionId": "sess_f25e3eec-176a-4546-b800-8f2b56986654",
+        "timestamp": 1788475047393
+      },
+      {
+        "executionId": "9967a4b8-088f-4298-b36f-746bd3606f54",
+        "chatSessionId": "sess_f25e3eec-176a-4546-b800-8f2b56986654",
+        "timestamp": 1788475347660
+      },
+      {
+        "executionId": "9967a4b8-088f-4298-b36f-746bd3606f54",
+        "chatSessionId": "sess_f25e3eec-176a-4546-b800-8f2b56986654",
+        "timestamp": 1788475494281
+      }
+    ],
+    "7.4 Write `partial-error.json` and `error.json`": [
+      {
+        "executionId": "9967a4b8-088f-4298-b36f-746bd3606f54",
+        "chatSessionId": "sess_f25e3eec-176a-4546-b800-8f2b56986654",
+        "timestamp": 1788475047445
+      },
+      {
+        "executionId": "9967a4b8-088f-4298-b36f-746bd3606f54",
+        "chatSessionId": "sess_f25e3eec-176a-4546-b800-8f2b56986654",
+        "timestamp": 1788475348781
+      },
+      {
+        "executionId": "9967a4b8-088f-4298-b36f-746bd3606f54",
+        "chatSessionId": "sess_f25e3eec-176a-4546-b800-8f2b56986654",
+        "timestamp": 1788475495050
+      }
+    ],
+    "8.1 Verify the build emits the composition and every state directory": [
+      {
+        "executionId": "9967a4b8-088f-4298-b36f-746bd3606f54",
+        "chatSessionId": "sess_f25e3eec-176a-4546-b800-8f2b56986654",
+        "timestamp": 1788475047506
+      },
+      {
+        "executionId": "9967a4b8-088f-4298-b36f-746bd3606f54",
+        "chatSessionId": "sess_f25e3eec-176a-4546-b800-8f2b56986654",
+        "timestamp": 1788475703043
+      },
+      {
+        "executionId": "9967a4b8-088f-4298-b36f-746bd3606f54",
+        "chatSessionId": "sess_f25e3eec-176a-4546-b800-8f2b56986654",
+        "timestamp": 1788475794563
+      }
+    ],
+    "9. Final checkpoint - Ensure build and all tests pass": [
+      {
+        "executionId": "9967a4b8-088f-4298-b36f-746bd3606f54",
+        "chatSessionId": "sess_f25e3eec-176a-4546-b800-8f2b56986654",
+        "timestamp": 1788475047547
+      },
+      {
+        "executionId": "9967a4b8-088f-4298-b36f-746bd3606f54",
+        "chatSessionId": "sess_f25e3eec-176a-4546-b800-8f2b56986654",
+        "timestamp": 1788475800777
+      },
+      {
+        "executionId": "9967a4b8-088f-4298-b36f-746bd3606f54",
+        "chatSessionId": "sess_f25e3eec-176a-4546-b800-8f2b56986654",
+        "timestamp": 1788475884548
+      }
+    ],
+    "1. Land the buildable skeleton (manifest + composition)": [
+      {
+        "executionId": "9967a4b8-088f-4298-b36f-746bd3606f54",
+        "chatSessionId": "sess_f25e3eec-176a-4546-b800-8f2b56986654",
+        "timestamp": 1788475157292
+      }
+    ],
+    "2. Author the server-rendered body fragment `slices/feature-volcano-camera/v1/slots/body.html`": [
+      {
+        "executionId": "9967a4b8-088f-4298-b36f-746bd3606f54",
+        "chatSessionId": "sess_f25e3eec-176a-4546-b800-8f2b56986654",
+        "timestamp": 1788475490744
+      }
+    ],
+    "7. Create fixtures and snapshot assets per state": [
+      {
+        "executionId": "9967a4b8-088f-4298-b36f-746bd3606f54",
+        "chatSessionId": "sess_f25e3eec-176a-4546-b800-8f2b56986654",
+        "timestamp": 1788475495085
+      }
+    ],
+    "5. Implement the DOM-patching ES module `slices/feature-volcano-camera/v1/js/volcano-camera.mjs`": [
+      {
+        "executionId": "9967a4b8-088f-4298-b36f-746bd3606f54",
+        "chatSessionId": "sess_f25e3eec-176a-4546-b800-8f2b56986654",
+        "timestamp": 1788475634743
+      }
+    ],
+    "8. Build and integration verification": [
+      {
+        "executionId": "9967a4b8-088f-4298-b36f-746bd3606f54",
+        "chatSessionId": "sess_f25e3eec-176a-4546-b800-8f2b56986654",
+        "timestamp": 1788475794625
+      }
+    ]
+  }
+}

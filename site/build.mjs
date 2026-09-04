@@ -392,6 +392,9 @@ async function buildComposition(stack, slices, seen) {
   }
 
   const dataMode = stack.data?.mode ?? 'live';
+  // Optional default fixture inlined on the live target when live data cannot be
+  // fetched from the kit (e.g. a host with no CORS). State directories still win.
+  const previewState = stack.data?.preview ?? null;
   const states = stack.data?.states ?? [];
   const targets = [{ state: null, outDir: join(distDir, 'c', stack.name) }];
   for (const state of states) {
@@ -400,9 +403,10 @@ async function buildComposition(stack, slices, seen) {
 
   for (const target of targets) {
     const payloads = {};
-    if (target.state) {
+    const fixtureState = target.state ?? previewState;
+    if (fixtureState) {
       for (const feature of features) {
-        if (feature.fixtures !== false) payloads[feature.id] = await readFixture(feature, target.state);
+        if (feature.fixtures !== false) payloads[feature.id] = await readFixture(feature, fixtureState);
       }
     }
 
@@ -410,12 +414,16 @@ async function buildComposition(stack, slices, seen) {
       title: escapeHtml(stack.title ?? stack.name),
       composition: escapeHtml(stack.name),
       stack: escapeHtml(stackLabel.join(' + ')),
-      dataMode: target.state ? `fixture:${target.state}` : dataMode,
+      dataMode: target.state
+        ? `fixture:${target.state}`
+        : previewState
+          ? `fixture:${previewState}`
+          : dataMode,
       styles: renderStyleTags(styles, remoteStyles, stack.theme?.designSystem !== 'none'),
       importmap: renderImportMap(modules),
       scripts: renderClassicScriptTags(classicScripts),
       modules: renderModuleTags(modules),
-      fixtures: target.state ? renderFixtureScript(payloads) : '',
+      fixtures: Object.keys(payloads).length ? renderFixtureScript(payloads) : '',
     };
     for (const [slot, fragments] of slotFragments) {
       vars[`slot:${slot}`] = fragments.join('\n');

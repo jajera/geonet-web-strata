@@ -418,12 +418,11 @@
             {{slot bandBefore}}
         </div>
         <div class="layout-two-col">
-            <div class="layout-main" id="main">
-                {{slot body}}
-            </div>
-            <aside class="layout-side">
-                {{slot sidebar}}
-            </aside>
+            <div class="layout-main" id="main">{{slot body}}</div>
+            <!-- Keep the aside on one line so an unused sidebar is :empty and
+                 base.css can collapse layout-two-col to a single column (needed
+                 for container queries like media-gallery's 2-up grid). -->
+            <aside class="layout-side">{{slot sidebar}}</aside>
         </div>
         <div class="layout-container-band">
             {{slot bandAfter}}
