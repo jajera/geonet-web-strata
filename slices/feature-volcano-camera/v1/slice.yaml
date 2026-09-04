@@ -1,0 +1,30 @@
+id: feature-volcano-camera
+version: 1
+kind: feature
+title: Volcano cameras
+summary: >
+  Replica of beta's /volcano/cameras gallery: page hero, tab bar, and the eleven
+  live stills from images.geonet.org.nz in beta's media-gallery markup.
+
+requiresBase: ">=1 <2"
+
+slots:
+  hero: slots/hero.html
+  body: slots/body.html
+
+config:
+  heading: Volcano Cameras
+  lead: >-
+    Explore the latest volcano images from our remote camera network alongside an
+    interactive map of camera locations and monitored volcanoes. These images help
+    track current volcanic activity and site conditions. Click on an image or camera
+    icon to view the latest observations and additional imagery from that location.
+  imageBase: https://images.geonet.org.nz/volcano/cameras/latest
+  detailBase: https://beta.geonet.org.nz/volcano/cameras
+  aboutHref: https://beta.geonet.org.nz/about/volcano/cameras
+  mapHref: https://beta.geonet.org.nz/volcano/cameras/map
+
+# Tab bar is not on the base; page-hero and media-gallery/media-block come from
+# sheets the base already links. Hash re-checked from beta /volcano/cameras.
+remoteCss:
+  - https://beta.geonet.org.nz/assets/css-dev/85530060-tab-bar.css

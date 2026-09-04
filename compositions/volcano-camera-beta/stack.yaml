@@ -1,0 +1,20 @@
+name: volcano-camera-beta
+title: Volcano cameras on the beta shell
+summary: >
+  Review artifact for the volcano camera spec. Replica of beta's /volcano/cameras
+  page: hero, tab bar, and live stills from images.geonet.org.nz.
+
+base: base@1
+
+features:
+  - feature-volcano-camera@1
+
+spec: volcano-camera
+
+theme:
+  # link = reference the beta design system stylesheets from beta.geonet.org.nz.
+  # none = not a supported review state for this slice (needs tab-bar + GDS gallery).
+  designSystem: link
+
+data:
+  mode: live
