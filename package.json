@@ -14,6 +14,6 @@
     "test": "node --check site/build.mjs && node --check site/serve.mjs"
   },
   "devDependencies": {
-    "yaml": "^2.8.1"
+    "yaml": "^2.9.1"
   }
 }
